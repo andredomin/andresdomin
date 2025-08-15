@@ -1,26 +1,581 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Mozilla+Headline:wght@200..700&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* #875547
+#44292B
+#000000
+*/
+
+body{
+  overflow-x: hidden;
+  background-color: #CDB495;
+  min-height: 300vh;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+h1, h2, h3, h4, h5, h6, p{
+  font-family: "Crimson Text";
+  font-weight: 400;
+  margin-left: 5vw;
+}
+button:hover{
+  background-color: #44292B;
+  color: white;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.nav{
+  height: 5vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+  background-color: #44292B;
+}
+.profiling{
+  display: flex;
+  justify-content: right;
+}
+.profile {
+  border-radius: 60px;
+  z-index: 100;
+  width: 55vw;
+  height: auto;
+}
+
+#intro-text{
+  margin-top: 2vh;
+}
+
+#intro-text h1{
+  margin-top: 3vh;
+}
+
+#intro-text button{
+  position: absolute;
+  z-index: 1000;
+}
+
+
+
+h2{
+  margin-top: 8vh;
+  font-size: 15px;
+}
+
+h1{
+  line-height: 1vh;
+}
+
+h3, h4{
+  color: #000000;
+}
+.intro p{
+  color: #44292B;
+}
+
+.ellipse-portfolio h3,  h4, .ellipse-portfolio2 h3, h4{
+  color: white;
+}
+
+span{
+  color: #875547;
+  
+}
+p{
+  margin-top: 4vh;
+  color: #44292B;
+  margin-right: 18vw;
+}
+
+button{
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-left: 5vw;
+}
+
+
+
+
+.ellipse{
+  position: relative;
+  top: -25vh;
+  left: -5vw;
+  opacity: 12%;
+  align-items:center;
+  height: 75%;
+  width: 250%;
+  border-radius: 100%;
+  justify-content:center;
+  position: absolute;
+  background:
+    radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
+
+  
+
+  animation: sweep 6s linear infinite alternate;
+}
+
+.ellipse2{
+  position: absolute;
+  top: 60vh;
+  left: -5vw;
+  opacity: 25%;
+  align-items:center;
+  height: 95%;
+  width: 110%;
+  transform: rotateZ(45deg);
+  border-radius: 100%;
+  justify-content:center;
+  position: absolute;
+  background:
+    radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
+
+  
+
+  animation: sweep2 6s linear infinite alternate;
+}
+
+.experience{
+  margin-top: 25vh;
+  padding-bottom: 8vh;
+}
+.experience h1{
+  font-size: 1.50em;
+}
+.experience h2 {
+  padding-bottom: 4vh;
+}
+
+@keyframes sweep{
+  to{
+    top: -15vh;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes sweep2{
+  to{
+    top: 80vh;
+  }
+
+}
+
+
+@keyframes sweep3{
+  to{
+    left: 50vw;
+  }
+
+}
+
+
+@keyframes sweep4{
+  to{
+    left: 10vw;
+  }
+
+}
+
+/* Accesibilidad: respeta "reducir movimiento" */
+@media (prefers-reduced-motion: reduce){
+  .ellipse{ animation: none; }
+}
+
+
+.intro{
+  margin-top: 40vh;
+}
+
+.intro h1{
+  font-size: 1.35em;
+}
+
+.dates{
+  font-size: 0.75em;
+  margin-top: 1vh;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2vh;
+  margin-top: 8vh;
+}
+
+.buttons button {
+  background-color: #875547;
+  border-radius: 10px;
+  padding: 1vh 2vw;
+  width: 50%;
+}
+
+.buttons button:hover {
+  background-color: #44292B;
+}
+
+
+  
+.ellipse-portfolio, .ellipse-portfolio2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10vh 0;
+  cursor: pointer;
+}
+
+.ellipse-portfolio h1,
+.ellipse-portfolio2 h1 {
+  position: relative;
+  margin: 10vh 30vw;
+  z-index: 1;
+}
+
+.ellipse-portfolio h3,
+.ellipse-portfolio2 h3 {
+  position: relative; 
+  margin-top: -15vh;
+  margin-left: 30vw;
+  z-index: 1;
+}
+
+.ellipse3{
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  height: 100% !important;
+  width:75%;
+  border-radius: 100%;
+  opacity: 0.35;
+  z-index: 0;
+  background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
+  animation: sweep3 6s linear infinite alternate;
+}
+
+
+.stack{
+  margin-top: 150vh;
+  margin-left: 5vw;
+}
+
+.stack h1{
+  color: #875547;
+  margin-bottom: 8vh;
+}
+.circles{
+  display: grid;
+  gap: 40px;
+  align-items: center;
+  margin-left: 15vw;
+  width: 100px;
+  height: 100px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10vw;
+  height: 80vh;
+  width: 110vw;
+  background-color: #44292B;
+}
+
+.footer h1, p{
+  color: white;
+}
+
+.footer p{
+  margin-left: 22vw;
+}
+
+.footer button{
+  margin-top: 2vh;
+  width: 35vw;
+}
+
+/* Media queries */
+
+@media (min-width: 360px) {
+  .soluciones{
+    padding-top: 8vh;
+    font-size: 1.2em !important ;
+  }
+
+  .ellipse-portfolio, .ellipse-portfolio2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10vh 0;
+  cursor: pointer;
+}
+
+.ellipse-portfolio h1,
+.ellipse-portfolio2 h1 {
+  position: relative;
+  margin: 10vh 30vw;
+  z-index: 1;
+}
+
+.ellipse-portfolio h3,
+.ellipse-portfolio2 h3 {
+  position: relative; 
+  margin-top: 15vh;
+  margin-left: 30vw;
+  z-index: 1;
+}
+
+.ellipse3{
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  height: 100% !important;
+  width:75%;
+  border-radius: 100%;
+  opacity: 0.35;
+  z-index: 0;
+  background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
+  animation: sweep3 6s linear infinite alternate;
+}
+  
+}
+
+@media (min-width: 411px) {
+  .soluciones{
+    padding-top: 8vh;
+    font-size: 1.2em !important ;
+  }
+
+  .ellipse-portfolio, .ellipse-portfolio2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10vh 0;
+  cursor: pointer;
+}
+
+.ellipse-portfolio h1,
+.ellipse-portfolio2 h1 {
+  position: relative;
+  margin: 10vh 30vw;
+  z-index: 1;
+}
+
+.ellipse-portfolio h3,
+.ellipse-portfolio2 h3 {
+  position: relative; 
+  margin-top: 15vh;
+  margin-left: 30vw;
+  z-index: 1;
+}
+
+.ellipse3{
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  height: 100% !important;
+  width:75%;
+  border-radius: 100%;
+  opacity: 0.35;
+  z-index: 0;
+  background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
+  animation: sweep3 6s linear infinite alternate;
+}
+  
+}
+
+@media (min-width: 768px) {
+    h2{
+        font-size: 1.75em;
+    }
+  h1{
+    line-height: 4vh;
+    font-size: 4em;
+  }
+
+  h3{
+    font-size: 1.75em;
+  }
+
+  .ellipse-portfolio, .ellipse-portfolio2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10vh 0;
+  cursor: pointer;
+}
+
+.ellipse-portfolio h1,
+.ellipse-portfolio2 h1 {
+  position: relative;
+  margin: 10vh 30vw;
+  z-index: 1;
+}
+
+.ellipse-portfolio h3,
+.ellipse-portfolio2 h3 {
+  position: relative; 
+  margin-top: 15vh;
+  margin-left: 30vw;
+  z-index: 1;
+}
+
+.ellipse3{
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  height: 100% !important;
+  width:75%;
+  border-radius: 100%;
+  opacity: 0.35;
+  z-index: 0;
+  background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
+  animation: sweep3 6s linear infinite alternate;
+}
+
+  .soluciones{
+    padding-top: 8vh;
+    font-size: 2em !important;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+    h2{
+        font-size: 1.75em;
+    }
+  h1{
+    line-height: 24vh;
+    font-size: 4em;
+  }
+
+  h3{
+    font-size: 2.75em;
+  }
+
+  .profiling{
+  display: flex;
+  justify-content: right;
+}
+.profile {
+  border-radius: 60px;
+  z-index: 100;
+  width: 35vw;
+  height: auto;
+}
+  .ellipse{
+    top: -30vh;
+    height: 200%;
+  }
+
+  .ellipse2{
+    top: 340vh;
+  }
+
+  .ellipse3{
+    height: 75%;
+    width: 35%;
+  }
+
+
+  .intro{
+    margin-top: 100vh;
+    margin-left: 15vw;
+  }
+
+  .experience{
+    margin-left: 15vw;
+  }
+  .buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2vh;
+  margin-top: 8vh;
+}
+
+  .footer{
+    height: 100vh;
+
+  }
+
+  @keyframes sweep2{
+  to{
+    top: 390vh;
+  }
+
+}
+
+
+}
+
+@media (min-width: 1025px) {
+ 
+  #intro-text h3{
+    font-size: 2.25em;
+  }
+  p{
+    font-size: 1.25em;
+  }
+  .soluciones{
+    margin-top: 100vh;
+    font-size: 4em !important;
+  }
+  
+  .experience{
+    margin-top: 115vh;
+  }
+  .experience h1 {
+    font-size: 2em;
+  }
+
+  .experience h2{
+    margin-top: -10vh;
+  }
+
+  .miexp{
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1920px) {
+
+  h1{
+    font-size: 8em;
+  }
+  h2{
+    font-size: 1em;
+  }
+  p{
+    font-size: 2em;
+  }
+  button{
+    font-size: 2em;
+  }
+  .experience {
+    font-size: 2em;
+  }
+
+  .soluciones{
+    font-size: 4em !important;
+  }
+
+  
+
+  .footer button{
+    height: 10%;
+    font-size: 2em;
+  }
 }
