@@ -4,7 +4,9 @@
 #44292B
 #000000
 */
-
+html{
+  overflow-x: hidden;
+}
 body{
   overflow-x: hidden;
   background-color: #CDB495;
@@ -306,6 +308,13 @@ button{
 /* Media queries */
 
 @media (min-width: 360px) {
+  html{
+  overflow-x: hidden;
+}
+  body{
+    overflow-x: hidden;
+
+  }
   .soluciones{
     padding-top: 8vh;
     font-size: 1.2em !important ;
@@ -351,6 +360,13 @@ button{
 }
 
 @media (min-width: 411px) {
+  html{
+  overflow-x: hidden;
+}
+  body{
+    overflow-x: hidden;
+
+  }
   .soluciones{
     padding-top: 8vh;
     font-size: 1.2em !important ;
@@ -454,6 +470,13 @@ button{
 }
 
 @media (min-width: 1024px) {
+  html{
+  overflow-x: hidden;
+}
+  body{
+    overflow-x: hidden;
+
+  }
     h2{
         font-size: 1.75em;
     }
@@ -522,6 +545,13 @@ button{
 }
 
 @media (min-width: 1025px) {
+  html{
+  overflow-x: hidden;
+}
+  body{
+    overflow-x: hidden;
+
+  }
  
   #intro-text h3{
     font-size: 2.25em;
