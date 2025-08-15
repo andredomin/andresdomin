@@ -108,11 +108,11 @@ button{
 .ellipse{
   position: relative;
   top: -25vh;
-  left: -5vw;
+  left: -10vw;
   opacity: 12%;
   align-items:center;
-  height: 75%;
-  width: 250%;
+  height: 55%;
+  width: 110%;
   border-radius: 100%;
   justify-content:center;
   position: absolute;
@@ -125,12 +125,13 @@ button{
 }
 
 .ellipse2{
+  overflow-x: hidden;
   position: absolute;
-  top: 60vh;
-  left: -5vw;
+  top: 150vh;
+  left: -50vw;
   opacity: 25%;
   align-items:center;
-  height: 95%;
+  height: 65%;
   width: 110%;
   transform: rotateZ(45deg);
   border-radius: 100%;
@@ -141,7 +142,7 @@ button{
 
   
 
-  animation: sweep2 6s linear infinite alternate;
+  animation: sweep2 12s linear infinite alternate;
 }
 
 .experience{
@@ -471,8 +472,8 @@ button{
 
 @media (min-width: 1024px) {
   html{
-  overflow-x: hidden;
-}
+    overflow-x: hidden;
+  }
   body{
     overflow-x: hidden;
 
