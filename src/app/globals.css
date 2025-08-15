@@ -68,10 +68,6 @@ h2{
   font-size: 15px;
 }
 
-h1{
-  line-height: 1vh;
-}
-
 h3, h4{
   color: #000000;
 }
@@ -155,6 +151,7 @@ button{
 }
 .experience h1{
   font-size: 1.50em;
+  line-height: 5vh;
 }
 .experience h2 {
   padding-bottom: 4vh;
@@ -176,7 +173,7 @@ button{
 
 @keyframes sweep3{
   to{
-    left: 50vw;
+    left: 30vw;
   }
 
 }
@@ -255,14 +252,14 @@ button{
 .ellipse3{
   position: absolute;
   top: 5vh;
-  left: 0;
-  height: 100% !important;
-  width:75%;
+  left: 60vw;
+  height: 100%;
+  width:40vw;
   border-radius: 100%;
   opacity: 0.35;
   z-index: 0;
   background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
-  animation: sweep3 6s linear infinite alternate;
+  animation: sweep3 4s linear infinite alternate;
 }
 
 
@@ -274,15 +271,6 @@ button{
 .stack h1{
   color: #875547;
   margin-bottom: 8vh;
-}
-.circles{
-  display: grid;
-  gap: 40px;
-  align-items: center;
-  margin-left: 15vw;
-  width: 100px;
-  height: 100px;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .footer{
@@ -311,6 +299,55 @@ button{
 }
 
 /* Media queries */
+
+@media (min-width: 200px) {
+  
+  .ellipse3{
+    width: 60%;
+    left: 30vw;
+  }
+
+  .ellipse-portfolio h3,
+.ellipse-portfolio2 h3 {
+  position: relative; 
+  margin-top: 10vh;
+  margin-left: 30vw;
+  z-index: 1;
+}
+
+  @keyframes sweep3{
+  to{
+    left: 45vw;
+  }
+
+}
+}
+
+@media (min-width: 310px) {
+  
+  .ellipse3{
+    width: 40%;
+    left: 30vw;
+  }
+
+  .ellipse-portfolio h3,
+.ellipse-portfolio2 h3 {
+  position: relative; 
+  margin-top: 10vh;
+  margin-left: 30vw;
+  z-index: 1;
+}
+
+  @keyframes sweep3{
+  to{
+    left: 45vw;
+  }
+
+}
+
+
+
+  }
 
 @media (min-width: 360px) {
   html{
@@ -406,7 +443,7 @@ button{
   top: 5vh;
   left: 0;
   height: 100% !important;
-  width:75%;
+  width:45%;
   border-radius: 100%;
   opacity: 0.35;
   z-index: 0;
@@ -458,7 +495,7 @@ button{
   top: 5vh;
   left: 0;
   height: 100% !important;
-  width:75%;
+  width:35%;
   border-radius: 100%;
   opacity: 0.35;
   z-index: 0;
@@ -486,11 +523,12 @@ button{
         font-size: 1.75em;
     }
   h1{
-    line-height: 24vh;
+    
     font-size: 4em;
   }
 
   h3{
+
     font-size: 2.75em;
   }
 
@@ -514,8 +552,9 @@ button{
   }
 
   .ellipse3{
-    height: 75%;
-    width: 35%;
+    height: 40%;
+    width: 55%;
+    left: 30vw;
   }
 
 
@@ -542,6 +581,13 @@ button{
   @keyframes sweep2{
   to{
     top: 390vh;
+  }
+
+  }
+  
+  @keyframes sweep3{
+  to{
+    left: 25vh;
   }
 
 }
@@ -576,12 +622,20 @@ button{
     font-size: 2em;
   }
 
-  .experience h2{
-    margin-top: -10vh;
-  }
-
   .miexp{
     font-size: 3em;
+  }
+
+  .ellipse3{
+    height: 40%;
+    width: 35%;
+    left: 30vw;
+  }
+
+  @keyframes sweep3{
+  to{
+    left: 25vh;
+  }
   }
 }
 
