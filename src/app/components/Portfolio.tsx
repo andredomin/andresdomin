@@ -35,6 +35,26 @@ const Portfolio = () => {
       categoria: "Frontend",
       enlace: "https://control-ahorro.netlify.app/",
       elipses: ["ellipse3"]
+    },
+    {
+      id: 3,
+      titulo: "TodoPro",
+      descripcion: "Lista de tareas CRUD",
+      stack: "Full-Stack",
+      tecnologias: "React + Spring",
+      categoria: "Full-Stack",
+      enlace: "https://todopro-frontend.netlify.app/",
+      elipses: ["ellipse3"]
+    },
+    {
+      id: 4,
+      titulo: "LaBlue Tattoo",
+      descripcion: "Tattoo Landing Page",
+      stack: "Frontend",
+      tecnologias: "React",
+      categoria: "Frontend",
+      enlace: "https://labluetattoo.netlify.app/",
+      elipses: ["ellipse3"]
     }
   ];
 
@@ -55,8 +75,8 @@ const Portfolio = () => {
         <span>Portfolio</span>
       </h1>
 
-      {/* Botones dinámicos */}
-      <div className="buttons">
+      
+      <div className="buttons selection">
         {categorias.map((cat) => (
           <button
             key={cat}
@@ -76,7 +96,7 @@ const Portfolio = () => {
         ))}
       </div>
 
-      {/* Lista filtrada */}
+      
       {proyectosFiltrados.map((proyecto, index) => (
         <a
           key={index}
@@ -94,7 +114,7 @@ const Portfolio = () => {
             <h1>{proyecto.titulo}</h1>
             <h3>{proyecto.descripcion}</h3>
 
-            {/* Elipses condicionales */}
+            
             {proyecto.elipses.map((ellipseClass) => (
               <div key={ellipseClass} className={ellipseClass}></div>
             ))}

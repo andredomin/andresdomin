@@ -18,12 +18,12 @@ const Header = () => {
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 1.5}}
-        >André,</motion.h1>
+        >André ☕, </motion.h1>
         <motion.h3
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 2.5}}
-        ><span>Full-Stack Developer</span>, aprendiz de <span>Data Science</span> e <span>IA.</span></motion.h3>
+        ><span>Full-Stack Developer</span>, estudiante de <span>Data Science</span> e <span>IA.</span></motion.h3>
         <a href='mailto:andres10dominguez@gmail.com'><button>Contactar</button></a>
     </div>
     <div className="profiling">

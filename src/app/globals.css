@@ -104,7 +104,6 @@ button{
 
 
 
-
 .ellipse{
   position: relative;
   top: -25vh;
@@ -125,8 +124,8 @@ button{
 }
 
 .ellipse2{
+  z-index: -10;
   overflow-x: hidden;
-  position: absolute;
   top: 150vh;
   left: -50vw;
   opacity: 25%;
@@ -146,7 +145,7 @@ button{
 }
 
 .experience{
-  margin-top: 25vh;
+  margin-top: 20vh;
   padding-bottom: 8vh;
 }
 .experience h1{
@@ -157,6 +156,10 @@ button{
   padding-bottom: 4vh;
 }
 
+.selection{
+  z-index: 1000;
+}
+
 @keyframes sweep{
   to{
     top: -15vh;
@@ -165,7 +168,7 @@ button{
 
 @keyframes sweep2{
   to{
-    top: 80vh;
+    top: 150vh;
   }
 
 }
@@ -495,7 +498,7 @@ button{
   top: 5vh;
   left: 0;
   height: 100% !important;
-  width:35%;
+  width:45%;
   border-radius: 100%;
   opacity: 0.35;
   z-index: 0;
@@ -548,7 +551,7 @@ button{
   }
 
   .ellipse2{
-    top: 340vh;
+    top: 300vh;
   }
 
   .ellipse3{
@@ -580,7 +583,7 @@ button{
 
   @keyframes sweep2{
   to{
-    top: 390vh;
+    top: 150vh;
   }
 
   }
@@ -616,7 +619,7 @@ button{
   }
   
   .experience{
-    margin-top: 115vh;
+    margin-top: 55vh;
   }
   .experience h1 {
     font-size: 2em;
