@@ -23,7 +23,7 @@ const Header = () => {
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 2.5}}
-        ><span>Full-Stack Developer</span>, estudiante de <span>Data Science</span> e <span>IA.</span></motion.h3>
+        ><span>Data Analyst</span>, estudiante de <span>Data Science</span> y <span>ML/IA.</span></motion.h3>
         <a href='mailto:andres10dominguez@gmail.com'><button>Contactar</button></a>
     </div>
     <div className="profiling">

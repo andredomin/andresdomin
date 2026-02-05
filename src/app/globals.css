@@ -18,6 +18,13 @@ h1, h2, h3, h4, h5, h6, p{
   font-weight: 400;
   margin-left: 5vw;
 }
+.description{
+  font-size: 5vw;
+}
+
+.proyecto-titulo{
+  font-size: 4em;
+}
 button:hover{
   background-color: #44292B;
   color: white;
@@ -43,6 +50,8 @@ button:hover{
   width: 55vw;
   height: auto;
 }
+
+
 
 #intro-text{
   margin-top: 2vh;
@@ -256,8 +265,8 @@ button{
   position: absolute;
   top: 5vh;
   left: 60vw;
-  height: 100%;
-  width:40vw;
+  height: 16vh;
+  width: 75vw;
   border-radius: 100%;
   opacity: 0.35;
   z-index: 0;
@@ -301,12 +310,89 @@ button{
   width: 35vw;
 }
 
+.datalist{
+  margin-top: 25vh;
+}
+
+li{
+  list-style: none;
+}
+a{
+  color: #875547;
+}
+
+a:hover{
+  color:#44292B;
+}
+
+
+.data-title{
+  font-size: 1em;
+}
+
+.data-description{
+  font-size: 0.25em;
+}
+
+.retail-title{
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #44292B;
+}
+
+.retail-subtitle{
+  margin-top: 15vh;
+  font-weight: 500;
+}
+
+.retail-p{
+  line-height: 2;
+  font-weight: 510;
+  color: #000000;
+}
+
+.linknodecor{
+  text-decoration: none;
+}
+
+#repo-tech{
+  margin-left: 15vw;
+  color: #44292B;
+  font-size: 0.60em;
+}
+
+table{
+  margin-top: 10vh;
+  margin-left: 25vw;
+}
+
+table tr{
+  color: #44292B;
+}
+
+tbody td{
+  padding: 50 95;
+}
+
+table td{
+  color: #000000;
+  font-weight: 500;
+}
+
+.screenshots{
+  display: flex;
+  width: 80vw;
+  filter: sepia(0.9);
+}
+
 /* Media queries */
 
 @media (min-width: 200px) {
   
   .ellipse3{
-    width: 60%;
+    width: 50vw;
     left: 30vw;
   }
 
@@ -329,7 +415,7 @@ button{
 @media (min-width: 310px) {
   
   .ellipse3{
-    width: 40%;
+    width: 70vw;
     left: 30vw;
   }
 
@@ -377,24 +463,26 @@ button{
 .ellipse-portfolio h1,
 .ellipse-portfolio2 h1 {
   position: relative;
-  margin: 10vh 30vw;
+  font-size: 2.5em;
+  margin: 10vh 25vw;
   z-index: 1;
 }
 
 .ellipse-portfolio h3,
 .ellipse-portfolio2 h3 {
-  position: relative; 
-  margin-top: 15vh;
-  margin-left: 30vw;
+  position: relative;
+  width: 95vw;
+  margin-top: -5vh;
+  margin-left: 0vw;
   z-index: 1;
 }
 
 .ellipse3{
   position: absolute;
   top: 5vh;
-  left: 0;
-  height: 100% !important;
-  width:75%;
+  left: -5vw;
+  height: 35vh;
+  width:80vw;
   border-radius: 100%;
   opacity: 0.35;
   z-index: 0;
@@ -436,7 +524,7 @@ button{
 .ellipse-portfolio h3,
 .ellipse-portfolio2 h3 {
   position: relative; 
-  margin-top: 15vh;
+  margin-top: -5vh;
   margin-left: 30vw;
   z-index: 1;
 }
@@ -445,8 +533,8 @@ button{
   position: absolute;
   top: 5vh;
   left: 0;
-  height: 100% !important;
-  width:45%;
+  height: 35vh;
+  width:70vw;
   border-radius: 100%;
   opacity: 0.35;
   z-index: 0;
@@ -462,7 +550,7 @@ button{
     }
   h1{
     line-height: 4vh;
-    font-size: 4em;
+    font-size: 6em;
   }
 
   h3{
@@ -474,7 +562,7 @@ button{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 10vh 0;
+  margin: 20vh 0;
   cursor: pointer;
 }
 
@@ -489,7 +577,7 @@ button{
 .ellipse-portfolio2 h3 {
   position: relative; 
   margin-top: 15vh;
-  margin-left: 30vw;
+  margin-left: 15vw;
   z-index: 1;
 }
 
@@ -497,8 +585,8 @@ button{
   position: absolute;
   top: 5vh;
   left: 0;
-  height: 100% !important;
-  width:45%;
+  height: 50vh;
+  width: 70vw;
   border-radius: 100%;
   opacity: 0.35;
   z-index: 0;
@@ -527,7 +615,7 @@ button{
     }
   h1{
     
-    font-size: 4em;
+    font-size: 6em;
   }
 
   h3{
@@ -554,9 +642,18 @@ button{
     top: 300vh;
   }
 
+  .ellipse-portfolio h1{
+    font-size: 5em;
+  }
+
+  .ellipse-portfolio h3{
+    font-size: 3em;
+  }
+
   .ellipse3{
-    height: 40%;
-    width: 55%;
+    top: 5vh;
+    height: 16vh;
+    width: 50vw;
     left: 30vw;
   }
 
@@ -615,8 +712,11 @@ button{
   }
   .soluciones{
     margin-top: 100vh;
-    font-size: 4em !important;
+    font-size: 6em;
   }
+  .description{
+    font-size: 1vw;
+    }
   
   .experience{
     margin-top: 55vh;
@@ -630,9 +730,14 @@ button{
   }
 
   .ellipse3{
-    height: 40%;
-    width: 35%;
+    height: 56vh;
+    width: 40vw;
     left: 30vw;
+  }
+
+  .ellipse-portfolio h3{
+    margin-left: 10vw;
+    font-size: 2em;
   }
 
   @keyframes sweep3{
@@ -645,7 +750,7 @@ button{
 @media (min-width: 1920px) {
 
   h1{
-    font-size: 8em;
+    font-size: 2em;
   }
   h2{
     font-size: 1em;
@@ -661,10 +766,16 @@ button{
   }
 
   .soluciones{
-    font-size: 4em !important;
+    font-size: 6em;
   }
 
-  
+  .description{
+    font-size: 1vw;
+  }
+
+  .ellipse-portfolio h3{
+    margin-left: 10vw;
+  }
 
   .footer button{
     height: 10%;

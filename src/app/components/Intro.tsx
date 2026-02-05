@@ -3,20 +3,10 @@ import React from 'react'
 const Intro = () => {
   return (
     <div className='intro'>
-      <h1 className='soluciones'>Creo soluciones en <span>Software y Datos</span></h1>
-      <p>Apasionado por el desarrollo de software,
-los retos y el aprendizaje constante.<br />
-<br />
-<span>Desarrollador full-stack</span> con foco en
-backend, apasionado por el <span>desarrollo
-de software y la resolución de retos
-técnicos.</span>
-<br />
-<br />
-Experiencia en desarrollo de <span>APIs REST</span>,
-gestión de bases de datos y aplicación
-de buenas prácticas para crear
-soluciones robustas y escalables.
+      <h1 className='soluciones'>Transformo <span>datos</span> en información útil para la toma de decisiones.</h1>
+      <p>Data Analyst junior con background técnico, especializado en SQL Server, Power BI y análisis de datos.<br />
+      <br />
+Experiencia trabajando con bases de datos relacionales, creación de KPIs, optimización de consultas y visualización de datos para extraer insights de negocio.
 </p>
     </div>
   )
