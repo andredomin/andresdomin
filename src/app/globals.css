@@ -383,7 +383,7 @@ table td{
 
 .screenshots{
   display: flex;
-  width: 80vw;
+  width: 100vw;
   filter: sepia(0.9);
 }
 
@@ -432,6 +432,26 @@ table td{
     left: 45vw;
   }
 
+  
+
+}
+
+table{
+  margin-top: 10vh;
+  margin-left: -15vw;
+}
+
+table tr{
+  color: #44292B;
+}
+
+tbody td{
+  padding: 50 55;
+}
+
+table td{
+  color: #000000;
+  font-weight: 500;
 }
 
 
@@ -489,6 +509,26 @@ table td{
   background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
   animation: sweep3 6s linear infinite alternate;
 }
+
+table{
+  margin-top: 10vh;
+  margin-left: -10vw;
+}
+
+table tr{
+  color: #44292B;
+}
+
+tbody td{
+  padding: 50 55;
+}
+
+table td{
+  color: #000000;
+  font-weight: 500;
+}
+
+
   
 }
 
@@ -673,6 +713,24 @@ table td{
   margin-top: 8vh;
 }
 
+table{
+  margin-top: 10vh;
+  margin-left: 25vw;
+}
+
+table tr{
+  color: #44292B;
+}
+
+tbody td{
+  padding: 50 95;
+}
+
+table td{
+  color: #000000;
+  font-weight: 500;
+}
+
   .footer{
     height: 100vh;
 
@@ -749,6 +807,8 @@ table td{
 
 @media (min-width: 1920px) {
 
+  
+
   h1{
     font-size: 2em;
   }
@@ -781,4 +841,23 @@ table td{
     height: 10%;
     font-size: 2em;
   }
+
+
+  table{
+  margin-top: 10vh;
+  margin-left: 25vw;
+}
+
+table tr{
+  color: #44292B;
+}
+
+tbody td{
+  padding: 50 95;
+}
+
+table td{
+  color: #000000;
+  font-weight: 500;
+}
 }
