@@ -365,20 +365,18 @@ a:hover{
 
 table{
   margin-top: 10vh;
-  margin-left: 25vw;
+  padding-left: 15vw;
+  padding-right: 5vw;
 }
 
 table tr{
   color: #44292B;
 }
 
-tbody td{
-  padding: 50 0;
-}
-
 table td{
   color: #000000;
   font-weight: 500;
+  padding-top: 15vh;
 }
 
 .screenshots{
@@ -445,9 +443,6 @@ table tr{
   color: #44292B;
 }
 
-tbody td{
-  padding: 50 55;
-}
 
 table td{
   color: #000000;
@@ -517,10 +512,6 @@ table{
 
 table tr{
   color: #44292B;
-}
-
-tbody td{
-  padding: 50 55;
 }
 
 table td{
@@ -722,9 +713,6 @@ table tr{
   color: #44292B;
 }
 
-tbody td{
-  padding: 50 95;
-}
 
 table td{
   color: #000000;
@@ -850,10 +838,6 @@ table td{
 
 table tr{
   color: #44292B;
-}
-
-tbody td{
-  padding: 50 95;
 }
 
 table td{
