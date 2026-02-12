@@ -16,25 +16,25 @@ const Portfolio = () => {
 }
 
   const proyectos: Proyecto[] = [
-    {
+     {
       id: 1,
-      titulo: "Retail Analysis",
-      descripcion: "Análisis de ventas retail con KPIs, segmentación por categoría y dashboard interactivo",
-      stack: "Data",
-      tecnologias: "SQL Server, Power BI",
-      categoria: "Data",
-      enlace: "/data/retail_analysis",
-      elipses: ["ellipse3"]
-
-    },
-    {
-      id: 2,
       titulo: "BI Analyst Jobs List",
       descripcion: "Análisis de ofertas de empleo para perfiles Data / BI Analyst, salarios, distribución, outliers y élite salarial, localización, sector y empresa.",
       stack: "Data",
       tecnologias: "SQL Server, Power BI",
       categoria: "Data",
       enlace: "/data/bi-analyst-jobslist_analysis",
+      elipses: ["ellipse3"]
+
+    },
+    {
+      id: 2,
+      titulo: "Retail Analysis",
+      descripcion: "Análisis de ventas retail con KPIs, segmentación por categoría y dashboard interactivo",
+      stack: "Data",
+      tecnologias: "SQL Server, Power BI",
+      categoria: "Data",
+      enlace: "/data/retail_analysis",
       elipses: ["ellipse3"]
 
     },
