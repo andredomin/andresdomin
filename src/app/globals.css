@@ -23,7 +23,14 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .proyecto-titulo{
+  text-decoration: underline;
+  text-decoration-color: #875547;
   font-size: 4em;
+}
+
+.proyecto-titulo:hover{
+  text-decoration: underline;
+  text-decoration-color: #44292B;
 }
 button:hover{
   background-color: #44292B;
@@ -86,6 +93,10 @@ h3, h4{
 
 .ellipse-portfolio h3,  h4, .ellipse-portfolio2 h3, h4{
   color: white;
+  text-decoration: underline;
+  text-decoration-color: #875547;
+  margin-right: 100%;
+  text-overflow: none;
 }
 
 span{
@@ -270,7 +281,7 @@ button{
   height: 16vh;
   width: 75vw;
   border-radius: 100%;
-  opacity: 0.35;
+  opacity: 0.15;
   z-index: 0;
   background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
   animation: sweep3 4s linear infinite alternate;
@@ -354,6 +365,7 @@ a:hover{
   font-weight: 510;
   color: #000000;
 }
+
 
 .linknodecor{
   text-decoration: none;
@@ -490,7 +502,7 @@ table td{
   position: relative;
   width: 95vw;
   margin-top: -5vh;
-  margin-left: 0vw;
+  margin-left: 10vw;
   z-index: 1;
 }
 
@@ -501,7 +513,7 @@ table td{
   height: 35vh;
   width:80vw;
   border-radius: 100%;
-  opacity: 0.35;
+  opacity: 0.15;
   z-index: 0;
   background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
   animation: sweep3 6s linear infinite alternate;
@@ -558,7 +570,7 @@ table td{
 .ellipse-portfolio2 h3 {
   position: relative; 
   margin-top: -5vh;
-  margin-left: 30vw;
+  margin-left: 10vw;
   z-index: 1;
 }
 
@@ -569,7 +581,7 @@ table td{
   height: 35vh;
   width:70vw;
   border-radius: 100%;
-  opacity: 0.35;
+  opacity: 0.15;
   z-index: 0;
   background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
   animation: sweep3 6s linear infinite alternate;
@@ -621,7 +633,7 @@ table td{
   height: 50vh;
   width: 70vw;
   border-radius: 100%;
-  opacity: 0.35;
+  opacity: 0.15;
   z-index: 0;
   background: radial-gradient(200% 200% at 40% 30%, #875547,#CDB495 50%);
   animation: sweep3 6s linear infinite alternate;
