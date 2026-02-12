@@ -17,7 +17,7 @@ const Portfolio = () => {
 
   const proyectos: Proyecto[] = [
     {
-      id: 5,
+      id: 1,
       titulo: "Retail Analysis",
       descripcion: "Análisis de ventas retail con KPIs, segmentación por categoría y dashboard interactivo",
       stack: "Data",
@@ -29,42 +29,33 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      titulo: "Wanderfinder",
-      descripcion: "Agencia de viajes low-cost",
-      stack: "Full-stack",
-      tecnologias: "React/Redux + TS + Node + SQL",
-      categoria: "Full-Stack",
-      enlace: "https://wanderfinder.netlify.app",
+      titulo: "BI Analyst Jobs List",
+      descripcion: "Análisis de ofertas de empleo para perfiles Data / BI Analyst, salarios, distribución, outliers y élite salarial, localización, sector y empresa.",
+      stack: "Data",
+      tecnologias: "SQL Server, Power BI",
+      categoria: "Data",
+      enlace: "/data/bi-analyst-jobslist_analysis",
       elipses: ["ellipse3"]
+
     },
     {
       id: 3,
-      titulo: "SmartSpendr",
-      descripcion: "Meta de ahorros",
-      stack: "Frontend",
-      tecnologias: "React + Tailwind",
-      categoria: "Frontend",
-      enlace: "https://control-ahorro.netlify.app/",
-      elipses: ["ellipse3"]
-    },
-    {
-      id: 4,
-      titulo: "TodoPro",
-      descripcion: "Lista de tareas CRUD",
-      stack: "Full-Stack",
-      tecnologias: "React + Spring",
-      categoria: "Full-Stack",
-      enlace: "https://todopro-frontend.netlify.app/",
-      elipses: ["ellipse3"]
-    },
-    {
-      id: 5,
       titulo: "LaBlue Tattoo",
       descripcion: "Tattoo Landing Page",
-      stack: "Frontend",
+      stack: "Web",
       tecnologias: "React",
-      categoria: "Frontend",
+      categoria: "Web",
       enlace: "https://labluetattoo.netlify.app/",
+      elipses: ["ellipse3"]
+    },
+      {
+      id: 3,
+      titulo: "ML/AI",
+      descripcion: "Próximamente",
+      stack: "AI",
+      tecnologias: "AI",
+      categoria: "AI",
+      enlace: "",
       elipses: ["ellipse3"]
     }
 
@@ -122,7 +113,7 @@ const Portfolio = () => {
           key={proyecto.id}
           className={`ellipse-portfolio ${proyecto.categoria.toLowerCase()}`}
         >
-          <div className={proyecto.titulo.toLowerCase()}>
+          <div id="projects" className={proyecto.titulo.toLowerCase()}>
             <h1 className="proyecto-titulo">{proyecto.titulo}</h1>
             <h3 className="description">{proyecto.descripcion}</h3>
 

@@ -7,8 +7,8 @@ const page = () => {
     <h3 className='retail-subtitle'>Objetivo del <span>análisis</span></h3>
     <p className='retail-p'>Evaluar el rendimiento de las ventas retail mediante el análisis de datos históricos, identificando patrones de consumo, <span>diferencias entre categorías</span> y segmentos de clientes, y generando <span>KPIs clave</span> que permitan mejorar la <span>estrategia comercial y la toma de decisiones basada en datos.</span></p>
     <h3 className='retail-subtitle'>Dataset y <span>Repositorio</span></h3>
-    <p className='retail-p'>Puede acceder al dataset original aquí: <a className='linknodecor' href='https://www.kaggle.com/datasets/mehmettahiraslan/customer-shopping-dataset'>  🢚 dataset retail - csv 🢘</a></p>
-    <p className='retail-p'>Puede acceder al repositorio aquí: <a className='linknodecor' href='https://github.com/andredomin/retail_analysis'>  🢚 github 🢘</a></p>
+    <p className='retail-p'>Puede acceder al dataset original aquí: <a className='linknodecor' href='https://www.kaggle.com/datasets/mehmettahiraslan/customer-shopping-dataset'> dataset retail - csv </a></p>
+    <p className='retail-p'>Puede acceder al repositorio aquí: <a className='linknodecor' href='https://github.com/andredomin/retail_analysis'>github</a></p>
     <span id='repo-tech'>CONTIENE SQL, POWER BI Y CSV LIMPIO</span> 
     <h3 className='retail-subtitle'>KPIs <span>principales</span></h3>
     <table>

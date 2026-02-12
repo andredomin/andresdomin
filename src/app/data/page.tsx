@@ -13,6 +13,17 @@ const page = () => {
     }
     
       const proyectos: Proyecto[] = [
+
+        {
+         id: 2,
+        titulo: "BI Analyst Jobs List",
+        descripcion: "Análisis de ofertas de empleo para perfiles Data / BI Analyst, salarios, distribución, outliers y élite salarial, localización, sector y empresa.",
+        stack: "Data",
+        tecnologias: "SQL Server, Power BI",
+        categoria: "Data",
+        enlace: "/data/bi-analyst-jobslist_analysis",
+        elipses: ["ellipse3"]
+        },
         {
           id: 1,
           titulo: "Retail Analysis",
@@ -40,7 +51,7 @@ const page = () => {
                     {proyectos.map((proyecto, id) => (
                         
                         <li key={id}>
-                            <a href="/data/retail_analysis"><h3 className="data-title">{proyecto.titulo}</h3></a>
+                            <a href={proyecto.enlace}><h3 className="data-title">{proyecto.titulo}</h3></a>
                             <p className="data-description"><span>{proyecto.descripcion}</span></p>
                         </li>
                         
